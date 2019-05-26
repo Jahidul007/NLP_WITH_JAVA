@@ -11,7 +11,7 @@ import java.util.List;
 public class NERExample {
     public static void main(String[] args) {
         BasicConfigurator.configure();
-
+        System.out.println(Runtime.getRuntime().maxMemory());
         StanfordCoreNLP stanfordCoreNLP = Pipeline.getPipeline();
 
         String text = "Hey! my name is jahid. I have a friend his name Jack. We both are living in New work";
